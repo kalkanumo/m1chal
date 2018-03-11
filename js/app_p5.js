@@ -5,7 +5,9 @@ var scl = 20;
 var food;
 
 function setup() {
-  createCanvas(600, 600);
+  // createCanvas(600, 600);
+  var snakeCanvas = createCanvas(600, 600)
+  snakeCanvas.parent("snakeCanvas")
   s = new Snake();
   frameRate(15);                            // spowalnianie węża
   pickLocation();
